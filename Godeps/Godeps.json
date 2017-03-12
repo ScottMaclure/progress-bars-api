@@ -4,6 +4,11 @@
 	"GodepVersion": "v79",
 	"Deps": [
 		{
+			"ImportPath": "github.com/gin-gonic/gin",
+			"Comment": "v1.1.4",
+			"Rev": "e2212d40c62a98b388a5eb48ecbdcf88534688ba"
+		},
+		{
 			"ImportPath": "github.com/gin-gonic/gin/binding",
 			"Comment": "v1.1.4",
 			"Rev": "e2212d40c62a98b388a5eb48ecbdcf88534688ba"
@@ -33,11 +38,6 @@
 		{
 			"ImportPath": "golang.org/x/sys/unix",
 			"Rev": "99f16d856c9836c42d24e7ab64ea72916925fa97"
-		},
-		{
-			"ImportPath": "gopkg.in/gin-gonic/gin.v1",
-			"Comment": "v1.1.4",
-			"Rev": "e2212d40c62a98b388a5eb48ecbdcf88534688ba"
 		},
 		{
 			"ImportPath": "gopkg.in/go-playground/validator.v8",
