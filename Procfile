@@ -1,1 +1,1 @@
-web: go run api.go
+web: progress-bars-api
