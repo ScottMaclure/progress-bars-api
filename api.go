@@ -33,5 +33,5 @@ func barsPayload(c *gin.Context) {
 func main() {
 	r := gin.Default()
 	r.GET("/bars", barsPayload)
-	r.Run() // listen and serve on 8080
+	r.Run() // listen and serve on PORT
 }
