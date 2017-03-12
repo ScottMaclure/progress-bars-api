@@ -1,7 +1,7 @@
 package main
 
 import "math/rand"
-import "github.com/gin-gonic/gin"
+import "gopkg.in/gin-gonic/gin.v1"
 
 func randInt(min, max int) int {
 	return (min + rand.Intn((max+1)-min))
