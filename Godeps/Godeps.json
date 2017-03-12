@@ -2,6 +2,9 @@
 	"ImportPath": "progress-bars-api",
 	"GoVersion": "go1.8",
 	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/gin-gonic/gin",
