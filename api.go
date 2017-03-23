@@ -23,15 +23,27 @@ func buttons() []int {
 	}
 }
 
-func barsPayload(c *gin.Context) {
+// Route handler
+func barsHandler(c *gin.Context) {
+
 	c.JSON(200, gin.H{
 		"buttons": buttons(),
 		"bars":    bars(),
 	})
 }
 
+// Custom middleware
+func CorsHeaders() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		c.Header("Access-Control-Allow-Origin", "*")
+		c.Next()
+	}
+}
+
+// See https://github.com/gin-gonic/gin
 func main() {
 	r := gin.Default()
-	r.GET("/bars", barsPayload)
+	r.Use(CorsHeaders())
+	r.GET("/bars", barsHandler)
 	r.Run() // listen and serve on PORT
 }
